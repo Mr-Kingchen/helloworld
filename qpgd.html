@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" id="autoHTML">
+<head>
+    <meta charset="UTF-8">
+    <title>小米Note2</title>
+    <link rel="shortcut icon" href="xiaomi.ico">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html,body{
+            height: 100%;
+        }
+        body{
+            overflow: hidden;
+        }
+        .gd>.gdd{
+            list-style: none;
+            position: fixed;
+            right:10px;
+            top:50%;
+            margin-top:-125px;
+        }
+        .gd>.gdd>li{
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            border: 1px solid #000000;
+            margin: 20px auto;
+            border: 2px solid #fff;
+            background: white;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+        .gd>.gdd>.l1{
+            width: 10px;
+            height: 10px;
+            background: none;
+        }
+        .gd,.gd>div{
+            width: 100%;
+            height: 100%;
+        }
+        .gd>.d1{
+        	background: url(./images/gd.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .gd>.d2{
+            background: url(./images/gd1.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .gd>.d3{
+            background: url(./images/gd2.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .gd>.d4{
+            background: url(./images/gd3.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .gd>.d5{
+            background: url(./images/gd4.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .gd>.d6{
+            background: url(./images/gd5.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .gd>.d7{
+            background: url(./images/gd6.jpg) center center no-repeat;
+            background-size: cover;
+        }
+        .gd>.d1>.nr1{
+            width: 1176px;
+            margin: 0 auto;
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+        .gd>.d1>.nr1>h2{
+            color: white;
+            font-size: 40px;
+            font-weight: 500;
+        }
+        .gd>.d1>.nr1>.p1{
+            color: white;
+            font-size: 26px;
+            margin-top: 15px;     
+        }
+        .gd>.d1>.nr1>.p2{
+            margin-top: 60px;
+            font-size: 18px;
+            color: #93a1aa;
+        }
+        .gd>.d1>.nr1>.p3{
+            font-size: 18px;
+            color: #93a1aa;
+        }
+        .gd>.d1>.nr1>.p4{
+            font-size: 18px;
+            margin-top: 10px;
+            color: white;
+        }
+        .gd>.d2>.nr2{
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            width: 1226px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+        .gd>.d2>.nr2>p{
+            margin-top: 5px;
+        }
+        .gd>.d2>.lbf{
+            width: 50%;
+            color: white;
+            float: left;
+            padding-top: 180px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .gd>.d2>.lbf>.p1{
+            background: url(./images/gdtb.png) center 0 no-repeat;
+            padding: 20px 0 21px 0;
+            margin-bottom: 30px;
+        }
+        .gd>.d2>.rbf{
+            width: 50%;
+            color: white;
+            float: left;
+            padding-top: 180px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .gd>.d2>.rbf>.p2{
+            background: url(./images/gdtb.png) center 0 no-repeat;
+            padding: 20px 0 21px 0;
+            margin-bottom: 30px;
+        }
+        .gd>.d3>.nr3{
+            width: 1226px;
+            margin: 0 auto;
+            padding-top: 180px;
+            text-align: center;
+            color: white;
+        }
+        .gd>.d3>.nr3>h2{
+            font-size: 26px;
+            font-weight: 500;
+        }
+        .gd>.d3>.nr3>p{
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .gd>.d3>.nr3>.p1{
+            margin-top: 30px;
+        }
+        .gd>.d4>.nr4{
+            width: 1226px;
+            margin: 0 auto;
+            color: white;
+            padding-top: 300px;
+        }
+        .gd>.d4>.nr4>h2{
+            font-size: 26px;
+            font-weight: 500;
+        }
+        .gd>.d4>.nr4>p{
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        .gd>.d5>.nr5{
+            width: 1226px;
+            margin: 0 auto;
+            color: white;
+            padding-top: 300px;
+        }
+        .gd>.d5>.nr5>h2{
+            font-size: 26px;
+            font-weight: 500;
+        }
+        .gd>.d5>.nr5>p{
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .gd>.d5>.nr5>.p1{
+            margin-top: 16px;
+        }
+        .gd>.d5>.nr5>ul{
+            margin-top: 16px;
+            display: inline-block;
+        }
+        .gd>.d5>.nr5>ul>li{
+            float: left;
+            list-style-type: none;
+            text-align: center;
+            margin-right: 10px;
+            border-right: 1px solid #fff;
+            padding-right: 10px;
+        }
+        .gd>.d5>.nr5>ul>li>p{
+            font-size: 22px;
+        }
+        .gd>.d5>.nr5>ul>li>span{
+            font-size: 14px;
+        }
+        .gd>.d6>.nr6{
+            width: 1226px;
+            margin: 0 auto;
+            padding-top: 100px;
+            color: white;
+            text-align: center;
+        }
+        .gd>.d6>.nr6>h2{
+            font-size: 26px;
+            font-weight: 500;
+        }
+        .gd>.d6>.nr6>p{
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .gd>.d6>.nr6>.p1{
+            margin-top: 16px;
+        }
+        .gd>.d6>.nr6>ul{
+            margin-top: 20px;
+            border: 2px solid #fff;
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px;
+        }
+        .gd>.d6>.nr6>ul>li{
+            float: left;
+            font-size: 14px;
+        }
+        .gd>.d6>.nr6>ul>.l1{
+            border-right: 1px solid #fff;
+            padding-right: 5px;
+        }
+        .gd>.d6>.nr6>ul>.l2{
+            padding-left: 5px;
+        }
+        .gd>.d7>.nr7{
+            width: 426px;
+            margin: 0 auto;
+            padding-top: 100px;
+            color: white;
+            padding-left: 800px;
+        }
+        .gd>.d7>.nr7>h2{
+            font-size: 26px;
+            font-weight: 500;
+        }
+        .gd>.d7>.nr7>p{
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .gd>.d7>.nr7>.p1{
+            margin-top: 16px;
+        }
+        .gd>.d7>.nr7>.sp1{
+            font-size: 30px;
+        }
+        .gd>.d7>.nr7>.sp2{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+        <div class="gd">
+        <ul class="gdd">
+            <li class="l1"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="d1">
+            <div class="nr1">
+                <h2>小米Note 2 双曲面商务旗舰</h2>
+                <p class="p1">一面科技，一面艺术</p>
+                <p class="p2">5.7" 双曲面柔性屏，正反面 3D 曲面玻璃 / 2256万超高像素相机</p>
+                <p class="p3">骁龙821 性能版，可选 6GB + 128GB</p>
+                <p class="p4">64GB 2799元 | 128GB 3299元</p>
+            </div> 
+        </div>
+        <div class="d2">
+            <div class="nr2">
+                <p>就像经典的冰山理论，</p>
+                <p>第一眼看到的美，</p>
+                <p>只是全部创作的 1/8。</p>
+                <p>美的一面，是因为另一面了不起的探索：</p>
+                <p>小米Note 2 艺术品般的双曲面，背后是创新的柔性屏科技。</p>
+                <p>更强大的性能，则来自于更快的处理器、更快的存储、</p>
+                <p>更高像素的相机，以及对黑科技的不断探索。</p>
+                <p>创新的科技与艺术品般的工艺，</p>
+                <p>这就是我们为你打造的高端商务旗舰手机 。</p>
+                <p>小米Note 2 , 一面科技，一面艺术。</p>
+            </div>
+            <div class="lbf">
+            <p class="p1"></p>
+            <p>播放《梁朝伟 冰山理论》</p>
+            </div>
+            <div class="rbf">
+            <p class="p2"></p>
+            <p>播放《小米Note 2 工艺》</p>
+            </div>
+        </div>
+        <div class="d3">
+            <div class="nr3">
+                <h2>艺术品般的双曲面</h2>
+                <h2>背后是创新的柔性屏科技</h2>
+                <p class="p1">双曲面的美，源自对屏幕科技的不断探索。小米Note 2 采用 OLED 柔性屏，</p>
+                <p>一块可以弯曲的屏幕*，贴合于艺术品般的曲面玻璃，更高屏占比让纤薄的机身，</p>
+                <p>拥有更大显示面积。画面仿佛在曲面流动，视觉也得到了更大的延展。</p>
+            </div>
+        </div>
+        <div class="d4">
+            <div class="nr4">
+                <h2>商务旗舰</h2>
+                <h2>黑科技，不仅仅是「快」</h2>
+                <p>这依然是小米最快的安卓旗舰*！</p>
+                <p>骁龙821 性能版，高性能下再提速 10%。</p>
+                <p>可选 6GB +128GB 高速内存、闪存，进一步提升性能。</p>
+                <p>4070mAh 电池、高精度定位、HD 高清音质，</p>
+                <p>小米Note 2 不仅更快，更是方方面面全高端配置。</p>
+            </div>
+        </div>
+        <div class="d5">
+            <div class="nr5">
+                <h2>2256 万超高像素相机</h2>
+                <h2>细节多得惊人</h2>
+                <p class="p1">主相机多达 1.7 倍的像素数*，带来震撼人心的照片细节。</p>
+                <p>高像素为照片提供了超高分辨率，放大看，依然清晰。</p>
+                <p>强大的相机性能，甚至能为 4K 影片进行硬件级防抖。</p>
+                <p>前置相机首次支持自动对焦*，自拍美得有细节，合影人人都清晰。</p>
+                <ul>
+                    <li>
+                        <p>IMX318</p>
+                        <span>超高像素</span>
+                    </li>
+                    <li>
+                        <p>AF</p>
+                        <span>前置自动对焦</span>
+                    </li>
+                    <li>
+                        <p>4K</p>
+                        <span>硬件级视频防抖</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d6">
+            <div class="nr6">
+                <h2>亮黑与冰川银</h2>
+                <p class="p1">一面光明，一面夜晚的亮黑色，</p>
+                <p>黑得深邃，而光线照时却很明亮，优雅而神秘。</p>
+                <p>一面天空，一面大海的银色，</p>
+                <p>安静得像大海，光线流转时却像天空。</p>
+                <p>玻璃的材质，却拥有金属光泽，如梦如幻。</p>
+                <ul>
+                    <li class="l1">
+                        <p>64GB 2799元</p>
+                        <span>立即购买</span>
+                    </li>
+                    <li class="l2">
+                        <p>128GB 3299元</p>
+                        <span>立即购买</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d7">
+            <div class="nr7">
+                <h2>4G+ 全球版</h2>
+                <h2>小米Note 2 走遍全球</h2>
+                <p class="p1">游览整个世界的美景，或准备去地球另一端开下一个</p>
+                <p>会议，带上小米Note 2 全球版 想去哪里都可以。对通讯</p>
+                <p>科技进一步的探索，使小米Note 2 支持全球主流频</p>
+                <p>段。6 模 37 频，意味着你在世界各地，都能使用</p>
+                <p>当地高速 4G 网络*。</p>
+                <span class="sp1">6</span>
+                <span class="sp2">模</span>
+                <span class="sp1">37</span>
+                <span class="sp2">频</span>
+            </div>
+        </div>
+        </div>
+</body>
+<script type="text/javascript">
+    var aLi = document.querySelectorAll('.gd>.gdd>li');
+    var aBody = document.getElementsByTagName('body')[0];
+
+    var aDiv = document.querySelectorAll('.gd>div');
+    var leader = 0,target = 0,num=0, y=0;
+    var oHTML = document.querySelector('#autoHTML');
+    window.onscroll=function(){
+        //scrollTop值 兼容处理
+         y=document.body.scrollTop||document.documentElement.scrollTop||window.pageYOffset;   
+    }
+    for(var i=0;i<aLi.length;i++){
+        aLi[i].index = i;
+        aLi[i].onclick = function () {
+            showSilder(aDiv[this.index]);
+            num=this.index;
+            showLicolor(num);
+
+        }
+    }
+    //全屏滚动
+    function showSilder(obj) {
+        clearInterval(obj.timer);
+        target = obj.offsetTop;
+        obj.timer = setInterval(function () {
+            leader = leader + (target-leader)/10;
+            if(Math.abs(target-leader) <= 8){
+                leader = target;
+                clearInterval(obj.timer);
+            }
+            window.scrollTo(0,leader)
+        },30)
+
+    }
+    //li的颜色
+    function showLicolor(num){
+      for(var i=0;i<aDiv.length;i++){
+        aLi[i].style.background='white';
+        aLi[i].style.width='2px';
+        aLi[i].style.height='2px';
+      }
+       aLi[num].style.background='none';
+       aLi[num].style.width='10px';
+       aLi[num].style.height='10px';
+
+    }
+
+//   滚轮
+//    谷歌
+    oHTML.onmousewheel = autoSilder;
+    if (oHTML.addEventListener) {
+//        火狐
+        oHTML.addEventListener('DOMMouseScroll', autoSilder, false);
+    }
+
+    function autoSilder(ev) {
+        //alert(1);
+        var ev = ev || event;
+        //alert( ev.wheelDelta );
+
+        //alert(ev.detail)
+
+        var b = true;
+        if (ev.wheelDelta) {
+            b = ev.wheelDelta > 0 ? true : false;
+        } else {
+            b = ev.detail < 0 ? true : false;
+        }
+
+        //alert(b);
+
+        if ( b ) {
+            showSilder(aDiv[num]);
+            showLicolor(num);
+            var a=aBody.offsetHeight*num;
+            // console.log(a);
+            if(a==y){
+                num --;  
+            }
+            if(num < 0){
+                num  =  0;
+            }
+
+        } else {
+            showSilder(aDiv[num]);
+            showLicolor(num);
+            //得到body的高度乘以num为目标值
+            var a=aBody.offsetHeight*num;
+            // console.log(a);
+            if(a==y){
+                num ++;  
+            }
+          
+            if(num > aDiv.length - 1){
+                num  =  aDiv.length - 1;
+            }
+        }
+
+        if (ev.preventDefault) {
+            ev.preventDefault();
+        }
+
+        return false;
+
+    }
+</script>
+</html>

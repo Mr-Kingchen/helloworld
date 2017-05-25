@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#header{
+	width: 1130px;
+	height: 98px;
+	margin: 0 auto;
+}
+#header .logo{
+	width: 200px;
+	height: 98px;
+	background: url(../images/denglu_logo.png) no-repeat;
+}
+#banner{
+	width: 100%;
+	min-height: 588px;
+	position: absolute;
+	left: 0;
+	top: 98px;
+}
+#banner .lban,#banner .rban{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+}
+#banner .lban{
+	background: #14212b;
+	left: 0;
+}
+#banner .rban{
+	background: #14212b;
+	left: 50%;
+}
+#banner .login{
+	height: 588px;
+	background: url(../images/banner.jpg) no-repeat top center;
+	position: relative;
+	width: 1130px;
+	margin: 0 auto;
+}
+#banner .dlxx{
+	width: 400px;
+	height: 524px;
+	background: white;
+	position: absolute;
+	top: 32px;
+	right: 0;
+	overflow: hidden;
+}
+#banner .dlxx .bt{
+	width: 400px;
+	padding: 24px 0;
+	text-align: center;
+	display: inline-block;
+}
+#banner .dlxx .bt span{
+	font-size: 24px;
+	color: #333;
+	cursor: pointer;
+}
+#banner .dlxx .bt .zh{
+	padding-right: 22px;
+	border-right: 2px solid #e0e0e0;
+	color: #ff6700;
+}
+#banner .dlxx .bt .sm{
+	padding-left: 20px;
+}
+#banner .dlxx .footerzc{
+	/*height: 445px;*/
+	width: 100%;
+	text-align: center;
+}
+#banner .dlxx .footerzc form .ip1,#banner .dlxx .footerzc form .ip2{
+	width: 306px;
+	height: 22px;
+	line-height: 22px;
+	padding: 13px 16px 13px 14px;
+	border: 1px solid #e0e0e0;
+	outline: none;
+}
+#banner .dlxx .footerzc form .ip2{
+	margin-top: 15px;
+}
+#banner .dlxx .footerzc form .ip3{
+	margin-top: 5px;
+	background: #ff6700;
+	color: white;
+	font-size: 18px;
+	border: 1px solid;
+	width: 336px;
+	height: 50px;
+	outline: none;
+}
+#banner .dlxx .footerzc form div a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #999;
+}
+#banner .dlxx .footerzc form div a:hover{
+	color: #ff6700;
+}
+#banner .dlxx .footerzc form div{
+	margin-top: 15px;
+}
+#banner .dlxx .footerzc form div .a1{
+	padding-right: 11px;
+	border-right: 1px solid #999;
+}
+#banner .dlxx .footerzc form div .a2{
+	padding-left: 10px;
+}
+#banner .dlxx .footerzc form>.p1{
+	text-align: left;
+	color: #ff6700;
+	font-size: 14px;
+	padding-left: 30px;
+}
+#banner .dlxx .footerzc form>.p1>img{
+	vertical-align: middle;
+}
+#banner .dlxx .footerzc .qita{
+	margin-top: 65px;
+	width: 100%;
+}
+#banner .dlxx .footerzc .qita>span{
+	color: #999;
+	font-size: 14px;
+}
+#banner .dlxx .footerzc .qita .xlogin{
+	display: inline-block;
+}
+#banner .dlxx .footerzc .qita .xlogin>span{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	float: left;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+#banner .dlxx .footerzc .qita .xlogin .sp1{
+	background: url(../images/qq1.png) center no-repeat;
+	margin-left: 0px;
+}
+#banner .dlxx .footerzc .qita .xlogin .sp2{
+	background: url(../images/weibo1.png) center no-repeat;
+}
+#banner .dlxx .footerzc .qita .xlogin .sp3{
+	background: url(../images/zfb1.png) center no-repeat;
+}
+#banner .dlxx .footerzc .qita .xlogin .sp4{
+	background: url(../images/weixin1.png) center no-repeat;
+}
+#banner .dlxx .footerzc .qita .xlogin .sp1:hover{
+	background: url(../images/qq2.png) center no-repeat;
+}
+#banner .dlxx .footerzc .qita .xlogin .sp2:hover{
+	background: url(../images/weibo2.png) center no-repeat;
+}
+#banner .dlxx .footerzc .qita .xlogin .sp3:hover{
+	background: url(../images/zfb2.png) center no-repeat;
+}
+#banner .dlxx .footerzc .qita .xlogin .sp4:hover{
+	background: url(../images/weixin2.png) center no-repeat;
+}
+
+#banner .dlxx .erwm{
+	width: 100%;
+	text-align: center;
+	padding-top: 70px;
+	display: none;
+}
+#banner .dlxx .erwm>p{
+	font-size: 14px;
+	color: #757575;
+	margin-top: 10px;
+}
+#banner .dlxx .erwm>p>span{
+	color: #ff6700;
+}
+
+#footer{
+	width: 100%;
+	position: absolute;
+	top: 686px;
+	left: 0;
+	text-align: center;
+}
+#footer ul{
+	display: inline-block;
+	list-style: none;
+	padding-top: 60px;
+}
+#footer ul li{
+	float: left;
+	color: #757575;
+	font-size: 12px;
+	padding:0 10px;
+	border-left: 1px solid #757575;
+}
+#footer ul li:hover{
+	color: #333;
+}
+#footer ul li:first-child{
+	border-left: none;
+	color: #333;
+}
+#footer p{
+	color: #757575;
+	font-size: 12px;
+	padding: 10px 0 40px 0;
+}
+#footer .fo{
+	width: 1130px;
+	margin: 0 auto;
+}
